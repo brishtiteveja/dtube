@@ -3,7 +3,8 @@ const javalon = require('javalon')
 if (localStorage.getItem('avalonAPI')) {
     javalon.init({api: localStorage.getItem('avalonAPI')})
 } else {
-    javalon.init({api: 'https://dtube.club/api/'})
+    //javalon.init({api: 'https://dtube.club/api/'})
+    javalon.init({api: 'https://testnet-api.oneloved.tube'})
 }
 
 Session.set('avalonAPI',javalon.config.api)
