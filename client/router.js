@@ -176,6 +176,22 @@ FlowRouter.route('/election', {
     }
 });
 
+FlowRouter.route('/polls', {
+    name: "polls",
+    action: function(params, queryParams) {
+        avalon.getPolls(function(err, res) {
+            Session.set('polls', res)
+        })
+        Session.set("pageTitle", 'Vote for DTube Leaders')
+        Session.set("currentMenu", 13)
+        Template.sidebar.selectMenu();
+        BlazeLayout.render('masterLayout', {
+            main: "polls",
+            nav: "nav",
+        });
+    }
+});
+
 FlowRouter.route('/newaccount', {
     name: "newaccount",
     action: function(params, queryParams) {
@@ -332,7 +348,7 @@ FlowRouter.route('/settings', {
       main: "settings",
       nav: "nav"
     })
-    Session.set("currentMenu", 13)
+    Session.set("currentMenu", 14)
     Template.sidebar.selectMenu()
   }
 });
@@ -345,7 +361,7 @@ FlowRouter.route('/wiki/:folder/:page', {
       main: "wiki",
       nav: "nav"
     })
-    Session.set("currentMenu", 14)
+    Session.set("currentMenu", 15)
     Template.sidebar.selectMenu()
     Template.wiki.load()
   }
@@ -360,3 +376,4 @@ FlowRouter.notFound = {
         Session.set("pageTitle", translate('ERROR_PAGE_NOT_FOUND'))
     }
 };
+

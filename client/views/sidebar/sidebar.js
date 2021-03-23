@@ -71,12 +71,15 @@ Template.sidebar.selectMenu = function() {
             $('#electionsidebarmenu').addClass('activemenu')
             break;
         case 13:
+            $('#pollsidebarmenu').addClass('activemenu')
+            break;
+        case 14:
             $('#settingssidebarmenu').addClass('activemenu')
             break
-        case 14:
+        case 15:
             $('#helpsidebarmenu').addClass('activemenu')
             break
-        case 15:
+        case 16:
             $('#feedsidebarmenu').addClass('activemenu')
         default:
             break;
@@ -112,3 +115,4 @@ Template.sidebar.mobile = function() {
         .sidebar('setting', 'closable', true)
         .sidebar('toggle')
 }
+

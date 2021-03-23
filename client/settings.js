@@ -21,6 +21,7 @@ Meteor.settings.public = {
       "https://avalon.oneloved.tube",
       "https://avalon.tibfox.com",
       "http://localhost:3001",
+      "https://dtube.club/api",
     ],
     "HiveAPINodes": [
       "https://anyx.io",
@@ -85,7 +86,7 @@ Meteor.settings.public = {
     "sl": {"name": "Slovenščina", "path": "sl/sl-SI.json"},
     "sr": {"name": "српски", "path": "sr/sr-SP.json"},
     "sv-SE": {"name": "Svenska", "path": "sv-SE/sv-SE.json"},
-    "ta": {"name": "தமிழ்", "path": "ta/ta-IN.json"},      
+    "ta": {"name": "தமிழ்", "path": "ta/ta-IN.json"},
     "th": {"name": "ภาษาไทย", "path": "th/th-TH.json"},
     "tr": {"name": "Türkçe", "path": "tr/tr-TR.json"},
     "uk": {"name": "Українська", "path": "uk/uk-UA.json"},
